@@ -1705,3 +1705,13 @@ a.logo-light {
 .section-full {
     height: 100vh;
 }
+
+.span-angledown {
+    font-size: 8rem;
+    color:#444;
+    margin-top:40px;
+}
+
+#init {
+    
+}
