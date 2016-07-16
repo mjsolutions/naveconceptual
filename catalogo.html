@@ -37,8 +37,8 @@
 	<script src="catalogo/js/modernizr.custom.js"></script>
 
 </head>    
-    <body>
-        
+<body class="top-navigation pushy-right-side borderless">
+    
     <nav class="pushy pushy-right">
         <ul class="list-unstyled">
             <li><a class="logo" href="#"><img alt="" class="logo img-responsive" src="images/logo.png"></a></li>
@@ -81,8 +81,13 @@
             </li>            
         </ul>
     </nav>
-        
-                <div class="nav-wrapper smoothie">  
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <div id="master-wrapper">
+
+        <div class="nav-wrapper smoothie">  
             <div class="nav-inner smoothie">
                 <div class="container-fluid special-max-width">      
                     <div class="row">
@@ -115,16 +120,16 @@
         </div>
         
         
-	<!-- Bottom bar with filter and cart info -->
+	<!-- Bottom bar with filter and cart info    
 	<div class="bar">
 		<div class="filter">
 			<span class="filter__label">Filter: </span>
 			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
-			<button class="action filter__item" data-filter=".jackets"><i class="icon icon--jacket"></i><span class="action__text">Jackets</span></button>
-			<button class="action filter__item" data-filter=".shirts"><i class="icon icon--shirt"></i><span class="action__text">Shirts</span></button>
-			<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Dresses</span></button>
-			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Trousers</span></button>
-			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Shoes</span></button>
+			<button class="action filter__item" data-filter=".jackets"><span class="action__text">Jackets</span></button>
+			<button class="action filter__item" data-filter=".shirts"><span class="action__text">Shirts</span></button>
+			<button class="action filter__item" data-filter=".dresses"><span class="action__text">Dresses</span></button>
+			<button class="action filter__item" data-filter=".trousers"><span class="action__text">Trousers</span></button>
+			<button class="action filter__item" data-filter=".shoes"><span class="action__text">Shoes</span></button>
 		</div>
 		<button class="cart">
 			<i class="cart__icon fa fa-shopping-cart"></i>
@@ -132,12 +137,35 @@
 			<span class="cart__count">0</span>
 		</button>
 	</div>
+-->
 	<!-- Main view -->
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="filter">
+                            <div class="col-sm-12 mb60">
+                                <ul class=" masonry-portfolio-filter list-inline wow fadeIn text-left" data-wow-delay="0.2s">
+                                    <li><a class="btn btn-primary btn-transparent active" href="#" data-filter="*">All</a></li>
+                                    <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".jackets">Playeras</a></li>
+                                    <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".shirts">Souvenirs</a></li>
+                                    <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".dresses">Naipes</a></li>
+                                    <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".trousers">Otras cosas 1</a></li>
+                                    <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".shoes">Otras cosas 2</a></li>
+                                    
+                                    <button class="cart">
+                                        <i class="cart__icon fa fa-shopping-cart"></i>
+                                        <span class="text-hidden">Shopping cart</span>
+                                        <span class="cart__count">0</span>
+                                    </button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
 	<div class="view">
 		<!-- Grid -->
 		<section class="grid grid--loading">
-			<!-- Loader -->
-			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
 			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
 			<div class="grid__sizer"></div>
 			<!-- Grid items -->
@@ -273,9 +301,9 @@
 			</div>
 			<div class="grid__item shirts">
 				<div class="slider">
-					<div class="slider__item"><img src="images/shirt.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/shirt.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/shirt.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/shirt.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/shirt.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/shirt.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Dummy Product</h3>
@@ -286,9 +314,9 @@
 			</div>
 			<div class="grid__item trousers">
 				<div class="slider">
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/trousers.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/trousers.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="catalogo/images/trousers.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Dummy Product</h3>
@@ -693,6 +721,7 @@
 	<script src="catalogo/js/isotope.pkgd.min.js"></script>
 	<script src="catalogo/js/flickity.pkgd.min.js"></script>
 	<script src="catalogo/js/main.js"></script>
+    </div>
 </body>
 
 </html>
