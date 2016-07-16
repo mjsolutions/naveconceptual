@@ -915,11 +915,11 @@ textarea.form-control {
 .form-control {
     background-color: rgba(0,0,0,0.0);
     border: none;
-    border-bottom: 2px solid #50ADBB;
+    border-bottom: 1px solid #bbb;
 }
 
 .form-control:focus {
-    border: 2px solid #1EACCC !important;
+    border: 1px solid #bbb !important;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1110,7 +1110,7 @@ section, header#home {
 #footer-wrapper {
     background-image: url(../images/footer-bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     padding-top: 280px;
 }
 
