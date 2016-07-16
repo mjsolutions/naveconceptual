@@ -1714,7 +1714,13 @@ a.logo-light {
 }
 
 #init {
-    background: url("../images/img1.jpg")no-repeat center center fixed;
+    /*background: url("../images/img1.jpg")no-repeat center center fixed;*/
+    /*background-image: url(../images/img2.jpg);*/
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+     animation: background 20s linear infinite;
+     /*animation-delay: 4s;*/
     background-size: 100%;
 }
 
@@ -1727,4 +1733,19 @@ a.logo-light {
     width: 100%;
     height: 100%;
     left: 0;
+}
+
+@keyframes background{
+  0%, 20%{
+    background-image: url(../images/img2.jpg);
+  }  
+  25%, 55%{
+    background-image: url(../images/img1.jpg);
+  }
+  60%, 90%{
+    background-image: url(../images/img3.jpg);
+  }
+  95%, 100%{
+    background-image: url(../images/img2.jpg);
+  }
 }
