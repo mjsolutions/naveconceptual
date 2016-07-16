@@ -53,10 +53,10 @@
 		// isotope instance
 		iso,
 		// filter ctrls
-		filterCtrls = [].slice.call(document.querySelectorAll('.catalog > a')),
+		filterCtrls = [].slice.call(document.querySelectorAll('.catalog > a'));
 		// cart
-		cart = document.querySelector('.cart'),
-		cartItems = cart.querySelector('.cart__count');
+		//cart = document.querySelector('.cart'),
+		//cartItems = cart.querySelector('.cart__count');
 
 	function init() {
 		// preload images
@@ -115,10 +115,10 @@
 			iso.layout();
 		}, 50));
 
-		// add to cart
+		/*// add to cart
 		[].slice.call(grid.querySelectorAll('.grid__item')).forEach(function(item) {
 			item.querySelector('.action--buy').addEventListener('click', addToCart);
-		});
+		});*/
 	}
 
 	function addToCart() {
