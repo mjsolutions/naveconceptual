@@ -61,7 +61,7 @@
 .slider {
 	padding: 0;
 	border-radius: 5px;
-	background: #24252a;
+	background: #ddd;
 }
 
 .no-touch .slider {
@@ -70,7 +70,7 @@
 
 .slider__item {
 	width: 100%;
-	padding: 1em;
+	padding: 0.3em;
 }
 
 .slider__item img {
@@ -79,7 +79,7 @@
 /* Flickity page dots */
 
 .slider .flickity-page-dots {
-	bottom: 20px;
+	/*bottom: 20px;*/
 	opacity: 0;
 	-webkit-transition: opacity .3s;
 	transition: opacity .3s;
