@@ -1735,6 +1735,17 @@ a.logo-light {
     left: 0;
 }
 
+#text-about {
+    background: rgba(253,253,253,0.8);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    /*margin-left: -110px;*/
+    position: relative;
+    top: 150px;
+    left: -9%;
+}
+
 @keyframes background{
   0%, 20%{
     background-image: url(../images/img2.jpg);
