@@ -1692,3 +1692,12 @@ a.logo-light {
 .progress-bar-success {
     background-color: #222;
 }
+
+.col-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.mt25vh {
+    margin-top: 25vh;
+}
