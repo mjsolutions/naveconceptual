@@ -1701,3 +1701,7 @@ a.logo-light {
 .mt25vh {
     margin-top: 25vh;
 }
+
+.section-full {
+    height: 100vh;
+}
