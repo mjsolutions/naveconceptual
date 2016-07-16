@@ -53,7 +53,7 @@
 		// isotope instance
 		iso,
 		// filter ctrls
-		filterCtrls = [].slice.call(document.querySelectorAll('.filter > button')),
+		filterCtrls = [].slice.call(document.querySelectorAll('.catalog > a')),
 		// cart
 		cart = document.querySelector('.cart'),
 		cartItems = cart.querySelector('.cart__count');
@@ -99,8 +99,8 @@
 	function initEvents() {
 		filterCtrls.forEach(function(filterCtrl) {
 			filterCtrl.addEventListener('click', function() {
-				classie.remove(filterCtrl.parentNode.querySelector('.filter__item--selected'), 'filter__item--selected');
-				classie.add(filterCtrl, 'filter__item--selected');
+				// classie.remove(filterCtrl.parentNode.querySelector('.filter__item--selected'), 'filter__item--selected');
+				// classie.add(filterCtrl, 'filter__item--selected');
 				iso.arrange({
 					filter: filterCtrl.getAttribute('data-filter')
 				});
