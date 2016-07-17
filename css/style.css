@@ -1760,3 +1760,17 @@ a.logo-light {
     background-image: url(../images/img2.jpg);
   }
 }
+
+#progress1 {
+  /*margin: 20px;*/
+  width: 400px;
+  height: 6px;
+  position: relative;
+}
+
+#container {
+  margin: 20px;
+  width: 400px;
+  height: 6px;
+  position: relative;
+}
