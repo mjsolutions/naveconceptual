@@ -1738,6 +1738,7 @@ a.logo-light {
 #text-about {
     background: rgba(253,253,253,0.8);
     padding: 30px;
+    margin-bottom: 150px;
     box-sizing: border-box;
     border: 1px solid #111;
     /*margin-left: -110px;*/
@@ -1759,4 +1760,16 @@ a.logo-light {
   95%, 100%{
     background-image: url(../images/img2.jpg);
   }
+}
+
+@media (max-width: 991px) {
+    #about img {
+        float: none;
+        margin: 0 auto;
+    }
+    #text-about {
+        left:0;
+        top: 30px;
+        margin-bottom: 30px;
+    }
 }
