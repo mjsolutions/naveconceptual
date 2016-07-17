@@ -49,7 +49,7 @@ html {
 /* Main styles */
 body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	color: #CECECE;
+	/*color: #CECECE;*/
 	/* background: #2A2B30; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -57,12 +57,13 @@ body {
 
 a {
 	text-decoration: none;
-	color: #f0f0f0;
+	/*color: #f0f0f0;*/
 	outline: none;
 }
 
 a:hover {
-	color: #5C5EDC;
+	color: #3A7D87;
+    text-decoration: none;
 }
 
 /* Blueprint header */
