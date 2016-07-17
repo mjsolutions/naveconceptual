@@ -903,7 +903,7 @@ img.logo {
 }
 
 textarea.form-control {
-    min-height: 250px
+    min-height: 100px
 }
 
 .dark-overlay .form-control, .dark-wrapper .form-control {
