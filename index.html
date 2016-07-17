@@ -66,11 +66,11 @@
     <div class="site-overlay"></div>
     
     <div id="master-wrapper">
-        <!-- <div class="preloader">
+        <div class="preloader">
             <div class="preloader-img">
                 <span class="loading-animation animate-flicker"><img src="images/loading.gif" alt="loading" /></span>
             </div>
-        </div> -->
+        </div>
         <section id="init" class="white-wrapper section-full">
         <div class="nav-wrapper smoothie">  
             <div class="nav-inner smoothie">
@@ -109,7 +109,7 @@
           </div>
         </section>
 
-        <section id="about" class="white-wrapper" style="min-height: 800px">
+        <section id="about" class="white-wrapper" >
              <div class="container">
                 <div class="row mb60 text-left">
                     <div class="col-sm-12">
@@ -118,16 +118,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-12" style="margin-bottom: 150px">
                 <img src="images/bio.jpg" alt="" class="col-md-4 col-md-offset-2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                <p class="col-md-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" id="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ipsum massa. Maecenas consectetur vestibulum felis, eu placerat elit luctus in. Ut turpis mi, bibendum ac venenatis in, sollicitudin ultricies odio. Nam vel erat felis. Fusce sapien risus, blandit ut pulvinar sit amet, porttitor vel nunc. Mauris purus mi, porta sit amet pharetra nec, bibendum tincidunt justo. Maecenas nec tellus et quam hendrerit tempus. Fusce ornare mi sed orci volutpat consectetur.</p>
+                <p class="col-md-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" id="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ipsum massa. Maecenas consectetur vestibulum felis, eu placerat elit luctus in. Ut turpis mi, bibendum ac venenatis in, sollicitudin ultricies odio. Nam vel erat felis. Fusce sapien risus, blandit ut pulvinar sit amet, porttitor vel nunc.</p>
             </div>
             <div class="clearfix"></div>
-            <div class="row">
-                <div class="col-md-3 col-md-offset-1">Progress Bar 1
-                    <div id="progress1"></div>
-                </div>
-           </div>
         </section>
 
         <section id="galeria" class="white-wrapper">
@@ -394,39 +389,6 @@
     <script src="js/owl-carousel.js"></script> 
     <script src="js/plugins.js"></script> 
     <script src="js/init.js"></script>
-    <script src="js/progressbar.js"></script>
-    <script> 
-        var bar = new ProgressBar.Line(progress1, {
-          strokeWidth: 4,
-          easing: 'easeInOut',
-          duration: 1400,
-          color: '#FFEA82',
-          trailColor: '#eee',
-          trailWidth: 1,
-          svgStyle: {width: '100%', height: '100%'},
-          text: {
-            style: {
-              // Text color.
-              // Default: same as stroke color (options.color)
-              color: '#999',
-              position: 'absolute',
-              right: '0',
-              top: '30px',
-              padding: 0,
-              margin: 0,
-              transform: null
-            },
-            autoStyleContainer: false
-          },
-          from: {color: '#FFEA82'},
-          to: {color: '#ED6A5A'},
-          step: (state, bar) => {
-            bar.setText(Math.round(bar.value() * 100) + ' %');
-          }
-        });
-
-            bar.animate(1.0);  // Number from 0.0 to 1.0
-    </script>
     
     <script>
     (function ($) {
