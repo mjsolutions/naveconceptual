@@ -5,7 +5,7 @@
  * Project Name: Mineem HTML Template
  */
 
-/*-----------------------------------------------------------------------------------*/
+ /*-----------------------------------------------------------------------------------*/
 /* 1 - COMMON
 /* 2 - HOVER EFFECT
 /* 3 - HEADER
@@ -38,7 +38,10 @@ body {
     font-weight: 300;
     padding: 30px 30px;
     overflow-x: hidden;
-    font-family: "Anonymous Pro",sans-serif;
+    /*font-family: "Anonymous Pro",sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background: url("../images/litografia.jpg")no-repeat center center fixed;
+    background-size: cover;
 }
 
 body.borderless {
@@ -56,7 +59,7 @@ body.borderless .nav-wrapper.scrolled {
 
 #master-wrapper {
     overflow: hidden;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .bottom-frame, .top-frame {
@@ -306,7 +309,7 @@ span.x4:before,i.x4:before {
 }
 
 .white-wrapper {
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .greyscale-images img, #mapwrapper {
@@ -508,13 +511,12 @@ span.x4:before,i.x4:before {
 }
 
 .nav-wrapper {
-    background-color: transparent;
-    position: relative;
+    background-color: #252525;
+    position: fixed;
     width: 100%;
-    z-index: 10;
-    /*background-color: transparent;    */
+    z-index: 10;  
     left: 0;
-    padding: 20px 30px 0;
+    /*padding: 20px 30px 0;*/
 }
 
 .nav-wrapper.scrolled {
@@ -540,7 +542,7 @@ span.x4:before,i.x4:before {
 
 .top-navigation .navbar-nav >li > a, .pushy a {
     font-family: 'Anonymous Pro';
-    color: #222;
+    color: #FFF;
     font-weight: 700;
     padding: 25px 20px;
     text-transform: uppercase;
@@ -550,12 +552,12 @@ span.x4:before,i.x4:before {
 
 .nav>li>a:hover {
     background-color: transparent;
-    color: #000;
+    color: #E0B18D;
 }
 
 .nav>li>a:focus {
     background-color: transparent;
-    color: #000;
+    color: #E0B18D;
 }
 
 .dropdown-menu {
@@ -602,7 +604,7 @@ span.x4:before,i.x4:before {
 
 img.logo {
     max-height: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -677,7 +679,7 @@ img.logo {
     width: 32px;
     border-radius: 0;
     transition: .3s;
-    background: #222;
+    background: #FFF;
     position: relative;
 }
 
@@ -687,7 +689,7 @@ img.logo {
     width: 32px;
     border-radius: 0;
     transition: .3s;
-    background: #222;
+    background: #FFF;
     content: '';
     position: absolute;
     left: 0;
@@ -697,7 +699,7 @@ img.logo {
 }
 
 .scrolled .tcon-menu__lines::before, .scrolled .tcon-menu__lines::after, .scrolled .tcon-menu__lines {
-        background: #222;
+    background: #FFF;
 }
 
 .tcon-menu__lines::before {
@@ -1193,7 +1195,7 @@ footer h1,footer h2,footer h3,footer h4,footer h5,footer h6,footer p, footer a,.
     left: 0px;
     margin-top: 35px;
     background-color: #50ADBB;
-        -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -1203,7 +1205,7 @@ footer h1,footer h2,footer h3,footer h4,footer h5,footer h6,footer p, footer a,.
 .widget:hover .widget-title:after {
     width: 60px;
     background-color: #50ADBB;
-        -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -1291,9 +1293,9 @@ footer h1,footer h2,footer h3,footer h4,footer h5,footer h6,footer p, footer a,.
 /*  RESPONSIVE
 /*-----------------------------------------------------------------------------------*/
 @media all and (min-width: 1200px) {
-        .container {
-            width: 1190px;
-        }
+    .container {
+        width: 1190px;
+    }
 }
 
 @media all and (min-width: 769px) and (max-width: 991px) {
@@ -1320,7 +1322,7 @@ footer h1,footer h2,footer h3,footer h4,footer h5,footer h6,footer p, footer a,.
     .bottom-frame, .top-frame {
         display: none;
     }
-     .hover-shift:hover .dark-overlay.fill-left {
+    .hover-shift:hover .dark-overlay.fill-left {
         position: relative;
         left: 0px;
     }
@@ -1632,7 +1634,7 @@ a#back-to-top.show {
 }
 
 .pushy .list-unstyled {
-        text-align: center;
+    text-align: center;
 }
 
 a.logo-dark, .scrolled a.logo-dark {
@@ -1700,7 +1702,7 @@ a.logo-light {
 }
 
 .mt25vh {
-    margin-top: 25vh;
+    margin-top: 40vh;
 }
 
 .section-full {
@@ -1714,20 +1716,34 @@ a.logo-light {
 }
 
 #init {
-    /*background: url("../images/img1.jpg")no-repeat center center fixed;*/
-    /*background-image: url(../images/img2.jpg);*/
-    background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center center;
-     animation: background 20s linear infinite;
-     /*animation-delay: 4s;*/
+    background: url("../images/Fondo1.png")no-repeat top center fixed;
+    background-size: cover;
+    /*animation: background 20s linear infinite;*/
+    /*animation-delay: 4s;*/
     background-size: 100%;
+}
+
+#about {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Standard*/
+    padding-top: 120px;
+}
+
+#galeria{
+    background-color: #fff;
+}
+
+#contacto{
+    background-color: #fff;
 }
 
 .section-full:before {
     content: '';
     display: block;
-    background-color: rgba(255,255,255,0.93);
+    /*background-color: rgba(255,255,255,0.93);*/
     position: absolute;
     /*top: 0;*/
     width: 100%;
@@ -1736,17 +1752,17 @@ a.logo-light {
 }
 
 #text-about {
-    background: rgba(253,253,253,0.8);
+    background: rgba(255,245,237,0.6);
     padding: 30px;
     margin-bottom: 150px;
-    box-sizing: border-box;
-    border: 1px solid #111;
+   /* box-sizing: border-box;
+    border: 1px solid #111;*/
     /*margin-left: -110px;*/
     position: relative;
     top: 150px;
     left: -9%;
 }
-
+/*
 @keyframes background{
   0%, 20%{
     background-image: url(../images/img2.jpg);
@@ -1760,9 +1776,9 @@ a.logo-light {
   95%, 100%{
     background-image: url(../images/img2.jpg);
   }
-}
+  }*/
 
-@media (max-width: 991px) {
+  @media (max-width: 991px) {
     #about img {
         float: none;
         margin: 0 auto;
@@ -1772,4 +1788,12 @@ a.logo-light {
         top: 30px;
         margin-bottom: 30px;
     }
+}
+.datos {
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.social {
+    padding-right: 20px;
 }

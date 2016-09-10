@@ -38,3 +38,6 @@
 .icon--shirt:before {
 	content: "\e604";
 }
+#datos {
+    height: 80px;
+}

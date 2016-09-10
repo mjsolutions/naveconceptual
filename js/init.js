@@ -53,20 +53,20 @@ jQuery(document).ready(function() {
   });
 
   /* NAVIGATION EFFECTS */
-  $(function() {
-    var headerNav = $(".nav-wrapper");
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 360) {
-        headerNav.removeClass('clearHeader').addClass("scrolled fadeInDown");
-        var headerNav2 = $(".nav-wrapper").outerHeight();;
-        $('#master-wrapper').css('padding-top', headerNav2 + 'px')
-      } else {
-        headerNav.removeClass("scrolled fadeInDown").addClass('clearHeader');
-        $('#master-wrapper').css('padding-top', '0' + 'px')
-      }
-    });
-  });
+  // $(function() {
+  //   var headerNav = $(".nav-wrapper");
+  //   $(window).scroll(function() {
+  //     var scroll = $(window).scrollTop();
+  //     if (scroll >= 360) {
+  //       headerNav.removeClass('clearHeader').addClass("scrolled fadeInDown");
+  //       var headerNav2 = $(".nav-wrapper").outerHeight();;
+  //       $('#master-wrapper').css('padding-top', headerNav2 + 'px')
+  //     } else {
+  //       headerNav.removeClass("scrolled fadeInDown").addClass('clearHeader');
+  //       $('#master-wrapper').css('padding-top', '0' + 'px')
+  //     }
+  //   });
+  // });
 
   $('#testimonial-carousel').carousel({
     pause: true,
