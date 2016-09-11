@@ -945,7 +945,7 @@ section, header#home {
 .section-sub-title {
     font-family: 'Anonymous Pro', serif;
     font-size: 16px;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
     letter-spacing: 1px;
     opacity: 1;
 }
@@ -1725,11 +1725,11 @@ a.logo-light {
 
 #about {
     background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Fx 3.6-15*/
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Standard*/
-    padding-top: 120px;
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1),rgba(255,255,255,1)); /*Standard*/
+    padding-top: 180px;
 }
 
 #galeria{
@@ -1759,8 +1759,8 @@ a.logo-light {
     border: 1px solid #111;*/
     /*margin-left: -110px;*/
     position: relative;
-    top: 150px;
-    left: -9%;
+    top: 60px;
+    left: -6%;
 }
 /*
 @keyframes background{
@@ -1777,6 +1777,11 @@ a.logo-light {
     background-image: url(../images/img2.jpg);
   }
   }*/
+   @media (max-width: 1070px) {
+    #init{
+        background: none;
+    }
+   }
 
   @media (max-width: 991px) {
     #about img {
@@ -1792,8 +1797,26 @@ a.logo-light {
 .datos {
     line-height: 60px;
     font-size: 18px;
+    color: #50ADBB;
 }
 
 .social {
     padding-right: 20px;
+}
+
+.titulocat {
+    margin-top: 120px;
+}
+
+.tituloser {
+    margin-top: 40px;
+}
+
+.text-biografia {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botones {
+    padding-top: 10px;
 }
